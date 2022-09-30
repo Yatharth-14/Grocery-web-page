@@ -1,0 +1,181 @@
+body{
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: coral;
+}
+
+.nav-wrapper{
+    background-color: #4caf50;
+    padding: 5px;
+    width: 99.2%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.nav-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 100%;
+}
+.nav-list li{
+    display: inline;
+    margin: 0px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+.nav-list li a:hover{
+    color: rgb(0, 0, 0);
+}
+.nav-list li a:active{
+    background-color: rgb(199, 54, 2);
+}
+.nav-list li a:visited{
+    background-color: rgb(157, 0, 177);
+}
+.form-container{
+    background-color: grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    bottom: -260px;
+    transition: .5s;
+}
+.form-container:hover{
+    bottom: 0;
+}
+#email-icon{
+    width: 30px;
+    float: left;
+    padding: 10px;
+}
+.form-head-container{
+    background-color: black;
+    padding: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 10px;
+}
+#contact-us-label{
+    color: white;
+}
+.form-item{
+    color: white;
+    margin-left: 15px;
+    padding: 10px;
+}
+#subject{
+    width: 200px;
+    height: 100px;
+}
+#submit-btn{
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 7px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+#submit-btn:hover{
+    background-color: #4caf50;
+}
+#caption-1{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    color: white;
+    font-size: 50px;
+    animation-name: caption-fade;
+    animation-duration: 2s;
+}
+@keyframes caption-fade{
+    0%{ opacity: 0; top: 0;}
+    100%{opacity: 1; top: 40%;}
+}
+.featured-wrapper{
+    position: relative;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#pop-cat{
+    text-align: center;
+}
+.product-container{
+    background-color: #4caf50;
+    text-align: center;
+    max-width: 20%;
+    position: relative;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: #4caf50;
+    border-style: solid;
+    margin-top: 10px;
+    animation-name: p-c-a;
+    animation-duration:2s ;
+}
+@keyframes p-c-a {
+    0%{opacity: 0; margin-top: 200px;}
+    100%{opacity: 1; margin-top: 10px;}
+}
+.product-container img{
+    width: 100%;
+    position: relative;
+}
+.cat-text{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.btn-container{
+    background-color: white;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top:1;
+}
+.view-more-btn{
+    border: none;
+    background-color: #4caf50;
+    width: 50%;
+    display: inline-block;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.view-more-btn:hover{
+    background-color: orange;
+}
+#social-id-container{
+    background-color: black;
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+    cursor: pointer;
+}
+#fb-icon:hover{
+    padding-left: 10%;
+}
+#insta-icon:hover{
+    padding-left: 10%;
+}
+#twitter-icon:hover{
+    padding-left: 10%;
+}
